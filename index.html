@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="src/app/font_awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="src/app/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="src/app/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/media.css">
+    <link rel="icon" href="src/img/favicon.png" sizes="16x16">
+</head>
+<body>
+<header class="header">
+    <div class="header__info">
+        <div class="header__logo-wrap">
+            <div class="header__logo">
+                <img src="src/img/logo.png" alt="">
+            </div>
+            <div class="header__title">
+                <span class="header__title-name">Название фирмы</span>
+                <span class="header__title-desc">Описание деятельности</span>
+            </div>
+        </div>
+        <div class="header__contacts-wrap">
+            <div class="header__buttons">
+                <button class="header__button" id="call_button">Заказать звонок</button>
+                <button class="header__button" id="reception_button">Записаться на прием</button>
+            </div>
+            <div class="header__contacts">
+                <span class="header__time">Работаем ПН-ПТ с 9:00 до 20:00</span>
+                <a href="#" class="header__phone">+7 (495) 506-58-92</a>
+            </div>
+        </div>
+    </div>
+    <nav class="header__menu active">
+        <ul class="header__menu-list">
+            <li class="header__menu-point active">Главная</li>
+            <li class="header__menu-point">О компании
+                <ul class="header__menu-deep-list">
+                    <li class="header__menu-deep-point">Информация о компании</li>
+                    <li class="header__menu-deep-point">Новости</li>
+                    <li class="header__menu-deep-point">Оборудование</li>
+                </ul>
+            </li>
+            <li class="header__menu-point">Услуги</li>
+            <li class="header__menu-point">Прайс-лист</li>
+            <li class="header__menu-point">Контакты</li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="main__slider">
+        <div class="slider">
+            <div class="slider__slide">
+                <img src="src/img/slide1.jpg" alt="">
+                <div class="slider__desc-wrap">
+                    <span class="slider__desc">Профессиональный ремонт головки <br> БЛОКА ЦИЛИНДРОВ</span>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <img src="src/img/slide2.jpg" alt="">
+                <div class="slider__desc-wrap">
+                    <span class="slider__desc">Профессиональный ремонт<br>ДВС</span>
+                </div>
+            </div>
+        </div>
+        <div class="main__request">
+            <span class="main__request-desc">Заполните заявку прямо сейчас и получите скидку 5%</span>
+            <button class="main__request-button">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </div>
+    </section>
+    <section class="main__offer">
+        <h2 class="main__offer-title">Что мы предлагаем?</h2>
+        <div class="offer__wrap">
+            <div class="offer__box">
+                <div class="offer__desc">
+                    <h2 class="offer__desc-title">
+                        РЕМОНТ
+                    </h2>
+                    <span class="offer__desc-subtitle">РЕМОНТ И ВОССТАНОВЛЕНИЕ БЛОКА ЦИЛИНДРОВ </span>
+                    <span class="offer__desc-subtitle">РЕМОНТ И ВОССТАНОВЛЕНИЕ ГОЛОВКИ БЛОКА ЦИЛИНДРОВ </span>
+                    <span class="offer__desc-subtitle">РЕМОНТ И ВОССТАНОВЛЕНИЕ КОЛЕНЧАТЫХ ВАЛОВ </span>
+
+                </div>
+                <div class="offer__img">
+                    <img src="src/img/service1.jpg" alt="">
+                </div>
+            </div>
+            <div class="offer__box">
+                <div class="offer__desc">
+                    <h2 class="offer__desc-title">
+                        РЕМОНТ РЕЗЬБЫ
+                    </h2>
+                    <span class="offer__desc-subtitle">ВОССТАНОВЛЕНИЕ РЕЗЬБЫ</span>
+                    <span class="offer__desc-subtitle">РЕЗЬБОВЫЕ ВСТАВКИ </span>
+                    <span class="offer__desc-subtitle">HELICOIL® PLUS</span>
+                </div>
+                <div class="offer__img">
+                    <img src="src/img/service2.jpg" alt="">
+                </div>
+            </div>
+            <div class="offer__box">
+                <div class="offer__desc">
+                    <h2 class="offer__desc-title">
+                        ОБРАБОТКА
+                    </h2>
+                    <span class="offer__desc-subtitle">ГАЗОДИНАМИЧЕСКОЕ НАПЫЛЕНИЕ МЕТАЛЛА</span>
+                    <span class="offer__desc-subtitle">ШЛИФОВАНИЕ ГБЦ</span>
+                    <span class="offer__desc-subtitle">ШЛИФОВАНИЕ ПЛОСКОСТИ КОЛЛЕКТОРОВ</span>
+                    <span class="offer__desc-subtitle">ПЕСКОСТРУЙНАЯ ОБРАБОТКА ДЕТАЛЕЙ</span>
+                </div>
+                <div class="offer__img">
+                    <img src="src/img/service3.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="main__calculator">
+        <div class="calculator__wrap">
+            <div class="calculator__price">
+                <h2 class="calculator__title">Расчет Стоимости</h2>
+                <span class="calculator__subtitle">Отправьте нам заявку и получите расчет стоимости работ</span>
+                <form class="calculator__form" action="">
+                    <select required name="mark" id="mark">
+                        <option disabled selected>Тип автомобиля</option>
+                        <option value="">Легковая иномарка</option>
+                        <option value="">Легковая отечественная</option>
+                        <option value="">Грузовая иномарка</option>
+                        <option value="">Грузовая отечественная</option>
+                    </select>
+                    <select required name="works" id="works">
+                        <option disabled selected>Вид работы</option>
+                        <option value="">Гильзовка чугунного блока цилиндров</option>
+                        <option value="">Замена маслосъемных колпачков</option>
+                    </select>
+                    <select name="dop_work" id="dop_work">
+                        <option disabled selected>Дополнительные работы</option>
+                        <option value="">Не требуются</option>
+                        <option value="">Требуются</option>
+                    </select>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" required placeholder="Номер телефона">
+                    <button type="submit"> Отправить </button>
+                </form>
+            </div>
+            <div class="calculator__request">
+                <h2 class="calculator__title">Записаться На Ремонт</h2>
+                <span class="calculator__subtitle">Заполните заявку прямо сейчас и получите скидку 5%</span>
+                <form class="calculator__form" action="">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" required placeholder="Номер телефона">
+                    <span>Нажимая кнопку "ОТПРАВИТЬ", я даю согласие на обработку своих персональных данных и принимаю условия
+                        <a href="">Пользовательского соглашения</a></span>
+                    <button type="submit"> Отправить </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+</main>
+<footer>
+
+</footer>
+<script src="src/js/jquery-3.4.1.min.js"></script>
+<script src="src/app/slick/slick.min.js"></script>
+<script src="src/js/script.js"></script>
+</body>
+</html>

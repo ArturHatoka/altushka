@@ -1,0 +1,356 @@
+*, *:after, *:before {
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  z-index: 1;
+  scroll-behavior: smooth;
+  background: rgba(255, 255, 255, 0); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+body {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.header {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  z-index: 500; }
+  .header__info {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0 20px; }
+  .header__logo {
+    position: relative;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    margin-right: 25px; }
+    .header__logo-wrap {
+      position: relative;
+      display: flex;
+      width: 40%;
+      height: 125px;
+      align-items: center; }
+    .header__logo img {
+      position: relative;
+      display: flex;
+      width: auto;
+      align-items: center;
+      justify-content: center;
+      height: 100%; }
+  .header__title {
+    position: relative;
+    display: flex;
+    width: auto;
+    flex-direction: column; }
+    .header__title-name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 5px; }
+    .header__title-desc {
+      font-size: 1.1rem; }
+  .header__contacts {
+    position: relative;
+    display: flex;
+    margin: 10px 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem; }
+    .header__contacts-wrap {
+      position: relative;
+      display: flex;
+      flex-direction: column; }
+  .header__time {
+    margin: 0 5px; }
+  .header__phone {
+    font-weight: bold;
+    margin: 0 5px;
+    color: white; }
+  .header__buttons {
+    position: relative;
+    display: flex;
+    align-items: center; }
+  .header__button {
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: 0 none;
+    font-size: 1rem;
+    margin: 2px;
+    cursor: pointer; }
+    .header__button#call_button {
+      background: #ffa800; }
+    .header__button#reception_button {
+      background: #fede00; }
+  .header__menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    height: 40px; }
+    .header__menu-list {
+      position: relative;
+      display: flex;
+      padding: 0;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      height: 100%; }
+    .header__menu-point {
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      height: 100%;
+      align-items: center;
+      background: white;
+      cursor: pointer; }
+      .header__menu-point:hover, .header__menu-point.active {
+        background: #fede00; }
+    .header__menu-deep-list {
+      position: relative;
+      padding: 0;
+      display: none;
+      list-style: none; }
+
+.main {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .main__slider {
+    position: relative;
+    display: flex;
+    width: 100%; }
+  .main__request {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 200;
+    bottom: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 0; }
+    .main__request-desc {
+      font-size: 1.2rem; }
+    .main__request-button {
+      margin-top: 5px;
+      padding: 10px 20px;
+      background-color: #fede00;
+      border: 0 none;
+      cursor: pointer; }
+  .main__offer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px 0; }
+    .main__offer-title {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin: 50px 0; }
+  .main .offer__wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; }
+  .main .offer__box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%; }
+    .main .offer__box:nth-child(2) {
+      flex-direction: column-reverse; }
+  .main .offer__desc {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background: #fede00;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .main .offer__desc-title {
+      margin-bottom: 10px;
+      font-size: 1.8rem; }
+    .main .offer__desc-subtitle {
+      margin: 5px 0;
+      text-align: center; }
+  .main .offer__img {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; }
+    .main .offer__img img {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      transition: width .3s; }
+      .main .offer__img img:hover {
+        width: 125%;
+        transition: width .3s; }
+  .main__calculator {
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    background: url("../img/bg-calculator.jpg") center center;
+    height: 900px;
+    align-items: center;
+    justify-content: center; }
+  .main .calculator__wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    align-items: flex-start;
+    justify-content: center; }
+  .main .calculator__price {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start; }
+  .main .calculator__request {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: center; }
+    .main .calculator__request span {
+      margin: 5px; }
+      .main .calculator__request span a {
+        color: white;
+        text-decoration: underline; }
+  .main .calculator__form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center; }
+    .main .calculator__form input, .main .calculator__form select {
+      position: relative;
+      display: flex;
+      width: 75%;
+      font-size: 1.2rem;
+      margin: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      border-width: 2px;
+      border-style: inset;
+      border-color: initial;
+      border-image: initial; }
+    .main .calculator__form button {
+      margin-top: 10px;
+      padding: 5px 25px;
+      font-size: 1.2rem;
+      text-transform: uppercase; }
+  .main .calculator__title {
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.8rem; }
+  .main .calculator__subtitle {
+    margin-bottom: 10px; }
+
+.slider {
+  position: relative;
+  display: flex;
+  width: 100%; }
+  .slider__slide {
+    outline: none;
+    display: flex !important;
+    align-items: center; }
+    .slider__slide img {
+      filter: blur(1px);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  .slider__desc {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center; }
+    .slider__desc-wrap {
+      position: absolute;
+      z-index: 200;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+.slick-prev, .slick-next {
+  z-index: 300; }
+.slick-prev {
+  left: 10px;
+  width: 30px; }
+  .slick-prev:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f053";
+    font-size: 50px;
+    font-weight: 900;
+    transition: opacity .2s; }
+    .slick-prev:before:hover {
+      transition: opacity .2s; }
+.slick-next {
+  right: 10px;
+  width: 30px; }
+  .slick-next:before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f054";
+    font-size: 50px;
+    font-weight: 900;
+    transition: opacity .2s;
+    width: 30px; }
+    .slick-next:before:hover {
+      transition: opacity .2s; }
