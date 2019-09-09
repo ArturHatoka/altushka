@@ -57,6 +57,7 @@ body{
       width: 40%;
       height: 125px;
       align-items: center;
+      flex-direction: column;
     }
     & img{
       position: relative;
@@ -88,6 +89,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
+    flex-direction: column;
     &-wrap{
       position: relative;
       display: flex;
@@ -106,6 +108,7 @@ body{
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
   &__button{
     position: relative;
@@ -190,7 +193,7 @@ body{
     padding: 10px 0;
     &-desc{
       font-size: 1.2rem;
-
+      text-align: center;
     }
     &-button{
       margin-top: 5px;
@@ -250,6 +253,7 @@ body{
       &-title{
         margin-bottom: 10px;
         font-size: 1.8rem;
+        text-align: center;
       }
       &-subtitle{
         margin: 5px 0;
@@ -360,6 +364,7 @@ body{
     }
     &__subtitle{
       margin-bottom: 10px;
+      text-align: center;
     }
   }
   &__we_work{
@@ -481,6 +486,7 @@ body{
     &__desc{
       text-transform: uppercase;
       font-weight: 700;
+      text-align: center;
     }
     &__img{
       position: relative;
